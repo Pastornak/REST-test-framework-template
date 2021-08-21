@@ -1,5 +1,7 @@
 package utils;
 
+import config.ServiceConfig;
+
 public class EndpointBuilder {
     private String endpoint;
 
@@ -33,7 +35,7 @@ public class EndpointBuilder {
     }
 
     public String get() {
-        return this.endpoint;
+        return ServiceConfig.HOST + this.endpoint;
     }
 
 }
